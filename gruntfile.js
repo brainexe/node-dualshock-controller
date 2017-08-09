@@ -1,6 +1,6 @@
-var files = ['gruntfile.js',
-    'lib/*.js',
-    'lib/inputProcessors/*.js',
+const files = ['gruntfile.js',
+    'src/*.js',
+    'src/inputProcessors/*.js',
     'test/*.js',
     'examples/*.js'
 ];
@@ -13,6 +13,8 @@ module.exports = function(grunt) {
         jshint: {
             files: files,
             options: {
+                reporterOutput: "",
+                esnext: true,
                 node: true,
                 globals: {
                     describe: true,
