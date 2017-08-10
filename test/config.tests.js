@@ -5,8 +5,7 @@ var assert = require('assert');
 describe('The Config component', function() {
     var mockConfig = {
             vendorId: 1556,
-            productId: 616,
-            output: []
+            productId: 616
         },
         mockOptions = {
             config: 'dualShock3',
@@ -33,8 +32,8 @@ describe('The Config component', function() {
         configB;
 
     beforeEach(function() {
-        configA = require('../src/config');
-        configB = require('../src/config');
+        configA = require('../lib/config');
+        configB = require('../lib/config');
     });
 
 

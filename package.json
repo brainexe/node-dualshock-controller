@@ -1,30 +1,33 @@
 {
   "name": "dualshock-controller",
-  "version": "1.1.1",
-  "description": "Eventing API layer over HID for the Sony DualShock 3 and DualShock 4 controllers ",
-  "main": "./src/dualshock.js",
+  "version": "0.6.9",
+  "description": "node library for dual shock controllers",
+  "main": "./lib/dualshock.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
   "dependencies": {
-    "node-hid": "^0.5.0"
+    "node-hid": "^0.5.0",
+    "colors": "^0.6",
+    "joystick": "^0.1.1"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-mocha-test": "^0.13.2",
-    "mocha": "^3.2.0",
+    "grunt": "^0.4",
+    "grunt-cli": "^0.1",
+    "grunt-contrib-jshint": "^0.10",
+    "grunt-contrib-watch": "^0.6",
+    "grunt-mocha-test": "^0.10",
+    "mocha": "^1.17",
     "sinon": "^1.8",
-    "nyc": "^10.0.0",
+    "istanbul": "^0.2",
     "grunt-jsbeautifier": "^0.2.7",
     "jshint": "^2.5.0",
-    "mockery": "^2.0.0"
+    "mockery": "^1.4.0"
   },
   "scripts": {
     "test": "grunt test",
-    "coverage": "nyc npm test"
-  },
-  "engines": {
-    "node": ">=6.9.2"
+    "coverage": "istanbul cover _mocha"
   },
   "repository": {
     "type": "git",
@@ -33,6 +36,7 @@
   "author": "ricardo de pena",
   "license": "MIT",
   "readmeFilename": "README.md",
+  "gitHead": "ec07ab438dd6cd129000b285f33d8be7c59342b6",
   "keywords": [
     "ps3",
     "controller",

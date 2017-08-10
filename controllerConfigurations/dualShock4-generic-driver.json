@@ -146,32 +146,5 @@
         }
     ],
     "motionInputs" : [],
-    "status" : [],
-    "output": {
-        "defaultBuffer":[
-            5,255,4,0,0,0,0,0,0,0,0
-        ],
-        "indexes": {
-            "rumbleLeft": 4,
-            "rumbleRight": 5,
-            "red": 6,
-            "green": 7,
-            "blue": 8,
-            "flashOn": 9,
-            "flashOff": 10
-        }
-    },
-    "touchPad": [{
-        "name":"x1",
-        "activePin": 35,
-        "dataPinA": 37,
-        "dataPinB": 36,
-        "dataPinC": 38
-    },{
-        "name": "x2",
-        "activePin": 39,
-        "dataPinA": 41,
-        "dataPinB": 40,
-        "dataPinC": 42
-    }]
+    "status" : []
 }

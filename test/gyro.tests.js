@@ -1,9 +1,9 @@
 // Module dependencies.
-var Gyro = require('../src/gyro'),
+var Gyro = require('../lib/gyro'),
     assert = require('assert'),
     sinon = require('sinon'),
     EventEmitter = require('events').EventEmitter,
-    config = require('../src/config');
+    config = require('../lib/config');
 
 describe('the Gyro component', function() {
     'use strict';

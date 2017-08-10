@@ -1,9 +1,9 @@
 // Module dependencies.
-var Analogs = require('../src/analogs'),
+var Analogs = require('../lib/analogs'),
     assert = require('assert'),
     sinon = require('sinon'),
     EventEmitter = require('events').EventEmitter,
-    config = require('../src/config');
+    config = require('../lib/config');
 
 describe('the Analogs component', function() {
     'use strict';
